@@ -6,7 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 :root {
     --black: #2f2f2f;
@@ -70,6 +70,7 @@ header {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    margin-bottom: 100px;
     z-index: 1;
 }
 .content h2 {
@@ -105,9 +106,29 @@ header {
     padding: 30px 100px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
+}
+.navigation2 {
+    display: inline-flex;
+}
+.navigation2 li {
+    list-style: none;
+}
+.navigation2 li a {
+    color: var(--white);
+    margin-right: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.navigation2 li a:hover {
+    color: var(--red);
 }
 .sci {
-    display: flex;
+    display: inline-flex;
+}
+.sci img {
+    margin-right: 50px;
+    max-width: 50px;
 }
 .sci li {
     list-style: none;
@@ -120,4 +141,23 @@ header {
 }
 .sci li a:hover {
     color: var(--red);
+}
+.foot {
+    display: inline-flex;
+    float: right;
+}
+.foot li {
+    list-style: none;
+}
+.foot li a {
+    color:  var(--white);
+    text-decoration: none;
+    margin-right: 40px;
+    transition: 0.25s;
+}
+.foot li a:hover {
+    color: var(--red);
+}
+.texto {
+    color: var(--white);
 }
