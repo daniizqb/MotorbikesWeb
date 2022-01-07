@@ -161,3 +161,6 @@ header {
 .texto {
     color: var(--white);
 }
+.formulario {
+    display: block;
+}
