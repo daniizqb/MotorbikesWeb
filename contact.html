@@ -17,18 +17,21 @@
             </ul>
         </header>
 
-        <div class="formulario">
+        <div class="content">
             <h1>Contactanos</h1>
-            <form class="cf">
-                <div class="half left cf">
-                    <input type="text" id="input-name" placeholder="Name">
-                    <input type="email" id="input-email" placeholder="Email address">
-                    <input type="text" id="input-subject" placeholder="Subject">
-                </div>
-                <div class="half right cf">
-                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-                </div>
-                <input type="submit" value="Submit" id="input-submit" class="btn">
+            <form action="mailto:danizq303@alu.centroafuera.es" method="post" enctype="text/plain">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" value=""><br>
+                <input type="email" id="email" name="email" placeholder="Email" value=""><br>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto" value=""><br>
+                <label for="moto">Marca</label>
+                <select name="moto" id="moto">
+                    <option value="suzuki">Suzuki</option>
+                    <option value="kawasaki">Kawasaki</option>
+                    <option value="yamaha">Yamaha</option>
+                    <option value="ktm">KTM</option>
+                </select><br>
+                <textarea name="message" type="text" id="mensaje" placeholder="Mensaje"></textarea><br>
+                <input type="submit" value="Enviar" id="enviar" class="btn">
             </form>
         </div>
 
