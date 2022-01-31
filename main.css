@@ -97,7 +97,7 @@ header {
     letter-spacing: 4px;
 }
 .bike {
-    max-width: 80%;
+    max-width: 55%;
 }
 .footer {
     position: absolute;
@@ -164,3 +164,17 @@ header {
 .formulario {
     display: block;
 }
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+text-rendering: auto;
+--swiper-navigation-size: 44px;
+--swiper-theme-color: #007aff;
+font-family: Tahoma,Arial,Helvetica,sans-serif;
+line-height: .9em;
+color: #333;
+text-align: left;
+font-size: 100%;
+overflow: hidden;
+background: #fff;
+height: auto;
+display: block;
