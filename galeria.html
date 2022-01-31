@@ -9,12 +9,14 @@
 <section class="main">
     <header>
         <a href="index.html" class="logo">MBikes</a>
+        <div class="toggle"></div>
         <ul class="navigation">
             <li><a href="specs.html">Motos</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </header>
+
     <div class="content">
         <h2 style="text-align:center">Galeria</h2>
 
@@ -80,11 +82,9 @@
     </div>
     <div class="footer">
         <ul class="sci">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
-        <ul class="foot">
+            <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://twitter.com/home"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
             <li><a href="privacidad.html">Politica de Privacidad</a></li>
             <li><a href="legal.html">Aviso Legal</a></li>
         </ul>
@@ -92,13 +92,6 @@
 </section>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script>
-    const toggle = document.querySelector('.toggle');
-    const navigation = document.querySelector('.navigation');
-    toggle.onclick = function () {
-    toggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-    }
-
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -126,6 +119,12 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    const toggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    toggle.onclick = function () {
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
     }
 </script>
 </body>
