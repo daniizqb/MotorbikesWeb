@@ -11,34 +11,103 @@
             <a href="index.html" class="logo">MBikes</a>
             <ul class="navigation">
                 <li><a href="specs.html">Motos</a></li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </header>
 
         <div class="content">
-            <h1>Contactanos</h1>
-            <form action="mailto:danizq303@alu.centroafuera.es" method="post" enctype="text/plain">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" value=""><br>
-                <input type="email" id="email" name="email" placeholder="Email" value=""><br>
-                <input type="text" id="asunto" name="asunto" placeholder="Asunto" value=""><br>
-                <label for="moto">Marca</label>
-                <select name="moto" id="moto">
-                    <option value="Honda">Honda</option>
-                    <option value="Kawasaki">Kawasaki</option>
-                    <option value="Yamaha">Yamaha</option>
-                    <option value="Ktm">KTM</option>
-                </select><br>
-                <label for="moto">Modelo</label>
-                <select name="modelo" id="modelo">
-                    <option value="Ninja 650">Ninja 650</option>
-                    <option value="R7">R7</option>
-                    <option value="CBR 650">CBR 650</option>
-                    <option value="RC 390">RC 390</option>
-                </select><br>
-                <textarea name="message" type="text" id="mensaje" placeholder="Mensaje"></textarea><br>
-                <input type="submit" value="Enviar" id="enviar" class="btn">
-            </form>
+            <div class="contactUS">
+                <div class="title">
+                    <h2>Contactanos</h2>
+                </div>
+                <div class="box">
+                    <div class="contact form">
+                        <h3>Informacion</h3>
+                        <form action="mailto:danizq303@alu.centroafuera.es" method="post" enctype="text/plain">
+                            <div class="formBox">
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Nombre</span>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Daniel">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Apellido</span>
+                                        <input type="text" placeholder="Izquierdo">
+                                    </div>
+                                </div>
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Email</span>
+                                        <input type="email" placeholder="danizq303@alu.centroafuera.es">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Movil</span>
+                                        <input type="text" placeholder="658 77 77 77">
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <span>Mensaje</span><br>
+                                        <textarea placeholder="Escribe tu mensaje"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <input type="submit" value="Enviar">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact info">
+                        <h3>Informacion de contacto</h3>
+                        <div class="infoBox">
+                            <div>
+                                <span><ion-icon name="pin"></ion-icon></span>
+                                <p>Vallecas, Madrid <br>SPAIN</p>
+                            </div>
+                            <div>
+                                <span><ion-icon name="mail"></ion-icon></span>
+                                <a href="mailto:danizq303@alu.centroafuera.es">danizq303@alu.centroafuera.es</a>
+                            </div>
+                            <div>
+                                <span><ion-icon name="call"></ion-icon></span>
+                                <a href="tel:+34653777777">653 77 77 77</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24313.143584025434!2d-3.6732384707666768!3d40.383524319483406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225d0994ed505%3A0x41cc0ff30381931!2sPuente%20de%20Vallecas%2C%20Madrid!5e0!3m2!1ses!2ses!4v1643669171355!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+
+
+
+
+                <form action="mailto:danizq303@alu.centroafuera.es" method="post" enctype="text/plain">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" value=""><br>
+                    <input type="email" id="email" name="email" placeholder="Email" value=""><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" value=""><br>
+                    <label for="moto">Marca</label>
+                    <select name="moto" id="moto">
+                        <option value="Honda">Honda</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Ktm">KTM</option>
+                    </select><br>
+                    <label for="moto">Modelo</label>
+                    <select name="modelo" id="modelo">
+                        <option value="Ninja 650">Ninja 650</option>
+                        <option value="R7">R7</option>
+                        <option value="CBR 650">CBR 650</option>
+                        <option value="RC 390">RC 390</option>
+                    </select><br>
+                    <textarea name="message" type="text" id="mensaje" placeholder="Mensaje"></textarea><br>
+                    <input type="submit" value="Enviar" id="enviar" class="btn">
+                </form>
+            </div>
         </div>
 
         <div class="footer">
@@ -46,13 +115,19 @@
                 <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
-            <ul class="foot">
                 <li><a href="privacidad.html">Politica de Privacidad</a></li>
                 <li><a href="legal.html">Aviso Legal</a></li>
             </ul>
         </div>
     </section>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

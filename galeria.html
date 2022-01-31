@@ -6,38 +6,47 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<section class="main">
+    <header>
+        <a href="index.html" class="logo">MBikes</a>
+        <ul class="navigation">
+            <li><a href="specs.html">Motos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </header>
     <div class="content">
-        <h2 style="text-align:center">Slideshow Gallery</h2>
+        <h2 style="text-align:center">Galeria</h2>
 
         <div class="container">
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="cbr650r.png" style="width:100%">
+                <img src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-001-03-removebg-preview.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="r7.png" style="width:100%">
+                <img src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-003-03-removebg-preview.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="h2r.png" style="width:100%">
+                <img src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-004-03-removebg-preview.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="ninja650.png" style="width:100%">
+                <img src="2021-Yamaha-YZF-R125-EU-Icon_Blue_-Action-001-03-removebg-preview.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="PHO_BIKE_90_RE_rc390-22-orange-90re__SALL__AEPI__V1-removebg-preview.png" style="width:100%">
+                <img src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Static-002-03-removebg-preview.png" style="width:100%">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="r7.png" style="width:100%">
+                <img src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Static-004-03-removebg-preview.png" style="width:100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -49,27 +58,47 @@
 
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    <img class="demo cursor" src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-001-03-removebg-preview.png" style="width:100%" onclick="currentSlide(1)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    <img class="demo cursor" src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-003-03-removebg-preview.png" style="width:100%" onclick="currentSlide(2)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    <img class="demo cursor" src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Action-004-03-removebg-preview.png" style="width:100%" onclick="currentSlide(3)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    <img class="demo cursor" src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Static-002-03-removebg-preview.png" style="width:100%" onclick="currentSlide(4)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    <img class="demo cursor" src="2021-Yamaha-YZF-R125-EU-Icon_Blue_-Action-001-03-removebg-preview.png" style="width:100%" onclick="currentSlide(5)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    <img class="demo cursor" src="2022-Yamaha-YZF1000R1SPL-EU-Icon_Performance-Static-004-03-removebg-preview.png" style="width:100%" onclick="currentSlide(6)">
                 </div>
             </div>
         </div>
     </div>
+    <div class="footer">
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="foot">
+            <li><a href="privacidad.html">Politica de Privacidad</a></li>
+            <li><a href="legal.html">Aviso Legal</a></li>
+        </ul>
+    </div>
+</section>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <script>
+    const toggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    toggle.onclick = function () {
+    toggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    }
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
